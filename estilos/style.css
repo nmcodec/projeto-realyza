@@ -3,29 +3,70 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 body {
-    height: 100%vh;
-    width: 100%vw;
+    height: 100vh;
+    width: 100vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
 }
 
 header {
-    border: 1px dotted black;
+    border: 3px dashed black;
+    padding: 10px;
+    height: 90vh;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
 
-nav {
+header > h1 {
+    border: 3px dotted sienna;
+    flex: 0 0 600px;
+    height: 25vh;
+}
 
+header > nav {
+    border: 3px dotted orangered;
+    width: 50vw;
+    height: 25vh;
+
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+
+header > nav > a {
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+}
+
+header > nav > a:hover {
+    text-decoration: none;
 }
 
 main {
-
+    margin-top: 10px;
+    padding: 0px;
+    text-align: center;
+    border: 3px dashed black
 }
 
-a {
+main > section > article {
+    border: 3px dotted rgb(207, 16, 156);
+    margin-top: 10px;
+    padding: 10px;
+}
 
+article.sobre > p {
+    height: 300px;
+    border: 3px dotted green;
 }
 
 footer {
-
+    padding: 0px;
 }
