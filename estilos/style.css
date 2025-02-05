@@ -13,24 +13,25 @@ body {
 
 header {
     border: 3px dashed black;
+    background-color: rgb(212, 212, 168);
     
     padding: 10px;
     height: 90vh;
 
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    
 }
 
 header > h1 {
-    border: 3px dotted sienna;
+    /* border: 3px dotted sienna; */
 
     flex: 0 0 725px;
     height: 25vh;
 }
 
 header > nav {
-    border: 3px dotted orangered;
+    /* border: 3px dotted orangered; */
 
     width: 50vw;
     height: 25vh;
@@ -53,22 +54,28 @@ header > nav > a:hover {
 main {
     border: 3px dashed black;
 
-    margin-top: 10px;
+    /* margin-top: 10px; */
     padding: 0px;
     text-align: center;
 }
 
 main > section > article {
-    border: 3px dotted rgb(207, 16, 156);
+    /* border: 3px dotted rgb(207, 16, 156); */
 
-    margin: 10px 0px;
+    /* margin: 10px 0px; */
+    display: inline-flex;
 }
 
 section {
-    border: 3px dotted rgb(133, 38, 21);
+    /* border: 3px dashed rgb(133, 38, 21); */
+    background-color: rgb(26, 160, 111);   /* trocar pela cor ou imagem de fundo */
 
-    margin: 20px 0px;
+    /* margin: 20px 0px; */
     padding: 0px;
+}
+
+section > article > div {
+    align-items: center;
 }
 
 section.galeria {
@@ -76,24 +83,53 @@ section.galeria {
 }
 
 section.galeria > div {
-    border: 3px dotted green;
+    border: 1px solid green;
+    background-color: greenyellow;
 
     width: 25vw;
     height: 60vh;
-    margin: 20px 0px;
+    /* margin: 20px 0px; */
+    align-content: center;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+section.depoimentos {
+    background-color: rgb(189, 153, 244);
+
+    height: 400px;
+    /* padding: 10px 0px; */
+    align-content: center;
 }
 
 article > div {
-    border: 3px dotted green;
+    /* border: 3px dotted green; */
+    background-color: rgb(26, 160, 111);
 
     height: 300px;
-    width: 32vw;
-    margin: 10px 0px;
-    padding-top: 5px;
+    width: 32.5vw;
+    /* margin: 10px 0px; */
+    /* padding-top: 5px; */
     display: inline-flex;
     
 }
 
 footer {
-    padding: 0px;
+    border: 3px dashed black;
+
+    /* padding: 10px 0px; */
+    /* margin: 20px 0px; */
+    display: flex;
+}
+
+footer > div.contatos, div.formulario {
+    /* border: 3px dotted green; */
+    background-color: rgb(159, 184, 122);
+
+    width: 50vw;
+    height: 350px;
+    padding: 5px 0px;
+    display: inline-flex;
+    flex: 0 1 auto;
+    align-items: center;
 }
