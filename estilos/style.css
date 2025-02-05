@@ -7,14 +7,13 @@
 }
 
 body {
-    height: 100vh;
-    width: 100vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1em;
 }
 
 header {
     border: 3px dashed black;
+    
     padding: 10px;
     height: 90vh;
 
@@ -25,12 +24,14 @@ header {
 
 header > h1 {
     border: 3px dotted sienna;
-    flex: 0 0 600px;
+
+    flex: 0 0 725px;
     height: 25vh;
 }
 
 header > nav {
     border: 3px dotted orangered;
+
     width: 50vw;
     height: 25vh;
 
@@ -41,7 +42,7 @@ header > nav {
 
 header > nav > a {
     padding: 10px;
-    margin: 10px;
+    margin: 15px;
     text-decoration: none;
 }
 
@@ -50,21 +51,47 @@ header > nav > a:hover {
 }
 
 main {
+    border: 3px dashed black;
+
     margin-top: 10px;
     padding: 0px;
     text-align: center;
-    border: 3px dashed black
 }
 
 main > section > article {
     border: 3px dotted rgb(207, 16, 156);
-    margin-top: 10px;
-    padding: 10px;
+
+    margin: 10px 0px;
 }
 
-article.sobre > p {
-    height: 300px;
+section {
+    border: 3px dotted rgb(133, 38, 21);
+
+    margin: 20px 0px;
+    padding: 0px;
+}
+
+section.galeria {
+    display: flex;
+}
+
+section.galeria > div {
     border: 3px dotted green;
+
+    width: 25vw;
+    height: 60vh;
+    margin: 20px 0px;
+}
+
+article > div {
+    border: 3px dotted green;
+
+    height: 300px;
+    width: 32vw;
+    margin: 10px 0px;
+    padding-top: 5px;
+    display: inline-flex;
+    
 }
 
 footer {
