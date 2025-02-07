@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 500px) and (max-width: 992px) {
+    menu > span#burguer {
+        display: inline-block;
+    }
+
+    menu.itens {
+        display: none;
+    }
+
+    menu.itens > div.menu > a {
+        display: inline-block;
+    }
+}

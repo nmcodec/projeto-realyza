@@ -5,17 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Inicial</title>
     <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet" href="estilos/mobile.css" media="screen and (max-width: 500px)">
+    <link rel="stylesheet" href="estilos/mobile.css" media="screen and (min-width: 500px) and (max-width: 992px)">
+    <link rel="stylesheet" href="estilos/media-query.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body>
+<body onresize="mobile()">
     <header>
         <h1>Home</h1>
         <nav>
-            <a href="#">Home</a>
-            <a href="#">Quem somos</a>
-            <a href="#">Eventos</a> <!-- menu suspenso -->
-            <a href="#">Clientes</a>
-            <a href="#">Contato</a>
+            <menu>
+                <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+                <menu class="itens">
+                    <div class="menu">
+                        <a href="#">Home</a>
+                        <a href="#">Quem somos</a>
+                        <a href="#">Eventos</a> <!-- adicionar menu suspenso -->
+                        <a href="#">Clientes</a>
+                        <a href="#">Contato</a>
+                    </div>
+                </menu>
+            </menu>
         </nav>
     </header>
     <main>
@@ -72,5 +81,22 @@
             </form>
         </div>
     </footer>
+    <script>
+        function mobile() {
+            if (window.innerWidth >= 500 <= 992) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
