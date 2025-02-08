@@ -2,14 +2,16 @@
 
 @media screen and (min-width: 500px) and (max-width: 992px) {
     menu > span#burguer {
-        display: inline-block;
+        display: block;
     }
 
-    menu.itens {
-        display: none;
+    menu#itens {
+        display: list-item;
+        list-style-type: none;
+        list-style-position:inside;
     }
 
-    menu.itens > div.menu > a {
-        display: inline-block;
+    menu#itens > div.menu > a {
+        display: inline-flexbox;
     }
 }

@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="estilos/media-query.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body onresize="mobile()">
+<body onresize="tamanhoTela()">
     <header>
         <h1>Home</h1>
         <nav>
             <menu>
                 <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
-                <menu class="itens">
+                <menu id="itens">
                     <div class="menu">
                         <a href="#">Home</a>
                         <a href="#">Quem somos</a>
@@ -82,8 +82,8 @@
         </div>
     </footer>
     <script>
-        function mobile() {
-            if (window.innerWidth >= 500 <= 992) {
+        function tamanhoTela() {
+            if (window.innerWidth >= 992) {
                 itens.style.display = 'block'
             } else {
                 itens.style.display = 'none'

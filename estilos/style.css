@@ -34,7 +34,7 @@ header > h1 {
 header > nav > menu {
     border: 3px dotted orangered;
 
-    width: 50vw;
+    width: 70vw;
     height: 10vh;
 
     display: inline-flex;
@@ -54,10 +54,11 @@ menu > div.menu > a {
     margin: 10px 15px;
     display: inline-flex;
     text-decoration: none;
+    list-style-type: none;
 }
 
 menu > div.menu > a:hover {
-
+    
 }
 
 menu > div.menu > a:visited {
