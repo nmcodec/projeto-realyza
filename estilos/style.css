@@ -34,7 +34,7 @@ header > h1 {
 header > nav > menu {
     border: 3px dotted orangered;
 
-    width: 70vw;
+    width: 50vw;
     height: 10vh;
 
     display: inline-flex;

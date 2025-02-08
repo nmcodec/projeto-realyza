@@ -3,7 +3,7 @@
 @media screen and (min-width: 500px) and (max-width: 992px) {
     header > nav > menu {
         width: 20vw;
-        justify-content: space-evenly;
+        justify-content: space-around;
         align-items: center;
     }
 
@@ -12,10 +12,9 @@
         cursor: pointer;
     }
 
-    menu#itens > div.menu {
-        display: inline-flexbox;
-        flex-direction: column;
-        position: relative;
+    menu#itens > div {
+        display: inline-flex;
+        flex: 1 0 auto;
     }
 
     menu#itens > div.menu > a {
