@@ -195,9 +195,10 @@ section {
 }
 
 .depoimentos {
-    height: 300px;
+    margin: 25px 0px;
     padding: 0px 15px;
     align-content: center;
+    align-items: center;
 }
 
 footer {
