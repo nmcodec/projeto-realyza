@@ -30,7 +30,7 @@ nav a:hover {
 /* configuração header */
 
 header {
-    background: url("/imagens/bg.jpg") no-repeat center center;
+    background: url("../imagens/bg.jpg") no-repeat center center;
     background-size: cover;
     height: 92vh;
 }
