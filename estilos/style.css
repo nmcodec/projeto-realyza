@@ -100,6 +100,7 @@ nav {
 
     .mobile-menu {
         display: block;
+        overflow-x: hidden;
     }
 
     /* configuração responsiva das demais páginas */
