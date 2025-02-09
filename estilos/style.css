@@ -76,7 +76,7 @@ nav {
 
 @media (max-width: 999px) {
     body {
-        overflow: hidden;
+        overflow-x: hidden;
     }
 
     .nav-list {
@@ -206,10 +206,10 @@ footer {
     background: #10110B;
     color: #fff;
     display: flex;
-    margin: 15px 0px;
+    padding: 10px 0px 20px 0px;
 }
 
 footer div {
-    padding: 10px;
     text-align: justify;
+    padding: 15px;
 }
