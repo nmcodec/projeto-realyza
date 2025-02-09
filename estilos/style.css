@@ -60,6 +60,7 @@ nav {
 
 .mobile-menu {
     display: none;
+    overflow-x: hidden;
     cursor: pointer;
 }
 
@@ -80,7 +81,7 @@ nav {
     }
 
     .nav-list {
-        overscroll-behavior-x: contain;
+        
         position: absolute;
         top: 8vh;
         right: 0;
