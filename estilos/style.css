@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
 }
 
 
@@ -75,7 +76,7 @@ nav {
 
 @media (max-width: 999px) {
     body {
-        overflow-x: hidden;
+        overflow: hidden;
     }
 
     .nav-list {
@@ -202,6 +203,8 @@ section {
 }
 
 footer {
+    background: #10110B;
+    color: #fff;
     display: flex;
     margin: 15px 0px;
 }
