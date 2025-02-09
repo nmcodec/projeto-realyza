@@ -1,98 +1,211 @@
 @charset "UTF-8";
 
+/* configuração geral */
+
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1em;
+
+/* configuração dos links */
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s;
 }
+
+nav a:hover {
+    opacity: 0.7;
+}
+
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+
+/* configuração header */
 
 header {
-    border: 3px dashed black;
+    background: url("../Desktop/tilak-baloni-D9VxG14sOBw-unsplash.jpg") no-repeat center center;
+    background-size: cover;
+    height: 92vh;
+}
 
-    background-color: rgb(212, 212, 168);
-    padding: 10px;
-    height: 90vh;
 
+/* configuração nav menu principal */
+
+nav {
     display: flex;
-    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #23232e;
+    height: 8vh;
 }
 
-header > h1 {
-    border: 3px dotted sienna;
-
-    align-content: center;
-
-    flex: 0 1 720px;
-    height: 10vh;
+.nav-list {
+    list-style: none;
+    display: flex;
 }
 
-header > nav > menu {
-    border: 3px dotted orangered;
-
-    width: 50vw;
-    height: 10vh;
-
-    display: inline-flex;
-    justify-content: flex-end;
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
 }
 
-menu > span#burguer {
+.mobile-menu {
     display: none;
+    cursor: pointer;
 }
 
-menu > div.menu {
-    display: inline-flexbox;
+.mobile-menu div {
+    width: 30px;
+    height: 4px;
+    background: #fff;
+    margin: 6px;
+    transition: 0.3s;
 }
 
-menu > div.menu > a {
-    padding: 10px;
-    margin: 10px 15px;
-    display: inline-flex;
-    text-decoration: none;
-    list-style-type: none;
-}
 
-menu > div.menu > a:hover {
+/* configuração menu responsivo */
+
+@media (max-width: 999px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav-list {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 100vw;
+        height: 45vh;
+        background: #23232e;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        transform: translateX(100%);
+        /* transition: transform 0.3s ease-in; */
+    }
+
+    .nav-list li {
+        margin-left: 10;
+        opacity: 0; /* será utilizado na animação dos links no script JS */
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    /* configuração responsiva das demais páginas */
+
+    main {
+        font-size: small;
+    }
     
+    .galeria {
+        display: flex;
+        flex-flow: column wrap;
+        /* configurar exibição no JS para mostrar uma imagem */
+    }
+
+    footer {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    footer div {
+        padding: 0px 10px;
+    }
 }
 
-menu > div.menu > a:visited {
-
+.nav-list.active {
+    transform: translateX(0);  /* movimento da barra do menu */
 }
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    /* animação do menu; ver script JS */
+}
+
+/* botão FECHAR do menu responsivo */
+
+.mobile-menu.active .linha1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .linha2 {
+    opacity: 0;
+}
+
+.mobile-menu.active .linha3 {
+    transform: rotate(45deg) translate(-6px, -7px);
+}
+
+/* configuração main */
 
 main {
-
+    margin: 0;
+    padding: 10px 0px;
+    text-align: center;
+    background-color: #10110B;
+    color: #fff;
 }
 
-main > section {
-
+section {
+    margin: 25px 0px;
+    padding: 15px 0px;
 }
 
-section > article.sobre > div {
-
+.sobre {
+    display: inline-flex;
 }
 
-section.galeria > div {
-
+.sobre div {
+    align-items: center;
+    padding: 0px 10px;
 }
 
-section.depoimentos {
+.galeria {
+    display: flex;
+}
 
+.galeria div {
+    border: 1px solid #10110B;
+    background-color: #AB715D;
+
+    width: 100vw;
+    height: 60vh;
+    margin: 15px 0px;
+    align-content: center;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+.depoimentos {
+    height: 250px;
+    padding: 0px 15px;
+    align-content: center;
 }
 
 footer {
-
+    display: flex;
+    margin: 15px 0px;
 }
 
-footer > div.contatos, div.formulario {
-
-}
-
-footer > div.formulario > form {
-
+footer div {
+    padding: 10px;
+    text-align: justify;
 }
