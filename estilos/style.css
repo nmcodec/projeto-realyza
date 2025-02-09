@@ -80,7 +80,7 @@ nav {
     }
 
     .nav-list {
-        overflow-x: hidden;
+        overscroll-behavior-x: contain;
         position: absolute;
         top: 8vh;
         right: 0;
