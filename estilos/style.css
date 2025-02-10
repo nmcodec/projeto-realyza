@@ -17,6 +17,7 @@ nav a {
     color: #ffffff;
     text-decoration: none;
     transition: 0.3s;
+    font-size: 32px;
 }
 
 nav a:hover {
@@ -85,7 +86,7 @@ nav {
         position: absolute;
         top: 8vh;
         left: 0;
-        width: 97.7vw;
+        width: 100vw;
         height: 45vh;
         background: #23232e;
         flex-direction: column;
