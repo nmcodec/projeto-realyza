@@ -26,10 +26,6 @@ class MobileNavbar {
         this.mobileMenu.addEventListener("click", this.handleClick);
     }
 
-    myFunction() {
-        document.getElementById("navList").style.overflowX = "hidden";
-    }
-
     init() {
         if (this.mobileMenu) {
             this.addClickEvent();
@@ -41,7 +37,7 @@ class MobileNavbar {
 const mobileNavbar = new MobileNavbar(
     ".mobile-menu",
     ".nav-list",
-    ".nav-list li"
+    ".nav-list li",
 );
 
 mobileNavbar.init();

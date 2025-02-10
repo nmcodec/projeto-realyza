@@ -8,6 +8,9 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+body {
+    overflow-x: hidden;
+}
 
 /* configuração dos links */
 nav a {
@@ -50,7 +53,6 @@ nav {
 .nav-list {
     list-style: none;
     display: flex;
-    overflow-x: hidden;
 }
 
 .nav-list li {
@@ -82,8 +84,8 @@ nav {
     .nav-list {
         position: absolute;
         top: 8vh;
-        right: 0;
-        width: 99vw;
+        left: 0;
+        width: 97.7vw;
         height: 45vh;
         background: #23232e;
         flex-direction: column;
@@ -100,7 +102,6 @@ nav {
 
     .mobile-menu {
         display: block;
-        overflow-x: hidden;
     }
 
     /* configuração responsiva das demais páginas */
@@ -188,7 +189,7 @@ section {
     border: 1px solid #10110B;
     background-color: #AB715D;
 
-    width: 100vw;
+    width: 97.7vw;
     height: 60vh;
     margin: 15px 0px;
     align-content: center;
