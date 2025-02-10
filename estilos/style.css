@@ -6,7 +6,6 @@
     margin: 0;
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    overflow-x: hidden;
 }
 
 
@@ -51,6 +50,7 @@ nav {
 .nav-list {
     list-style: none;
     display: flex;
+    overflow-x: hidden;
 }
 
 .nav-list li {
