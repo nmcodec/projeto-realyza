@@ -77,7 +77,6 @@ nav {
 @media (max-width: 999px) {
     body {
         overflow-x: hidden;
-        overscroll-behavior-x: contain;
     }
 
     .nav-list {
