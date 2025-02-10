@@ -90,7 +90,7 @@ nav {
         background: #23232e;
         flex-direction: column;
         align-items: flex-start;
-        justify-content: space-around;
+        justify-content: space-evenly;
         transform: translateX(100%);
         transition: transform 0.3s ease-in;
     }
@@ -101,7 +101,7 @@ nav {
     }
 
     .nav-list a {
-        font-size: larger;
+        font-size: large;
     }
 
     .mobile-menu {
