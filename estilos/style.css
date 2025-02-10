@@ -193,7 +193,7 @@ section {
     border: 1px solid #10110B;
     background-color: #AB715D;
 
-    width: 97.7vw;
+    width: 100vw;
     height: 60vh;
     margin: 15px 0px;
     align-content: center;
@@ -212,10 +212,61 @@ footer {
     background: #10110B;
     color: #fff;
     display: flex;
-    padding: 10px 0px 20px 0px;
+    padding: 15px 0px;
 }
 
 footer div {
+    border: 2px dotted yellow;
+    display: flex;
+    flex-direction: column;
     text-align: justify;
-    padding: 15px;
+    padding: 0;
+    margin: 0;
+    width: 50vw;
+}
+
+.contatos {
+    padding: 15px 30px;
+}
+
+.formulario {
+    border: 2px dotted yellow;
+    display: flex;
+}
+
+form div {
+    border: 2px dotted yellow;
+    width: 12vw;
+}
+
+.dados {
+    display: flex;
+    flex-flow: row wrap;
+    width: 25vw;
+}
+
+.dados div p {
+    display: flex;
+    flex-direction: column;
+}
+
+.msg {
+    display: flex;
+    flex-direction: column-reverse;
+    width: fit-content;
+}
+
+.msg textarea{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.enviar {
+    display: flex;
+    justify-content: right;
+}
+
+textarea {
+    resize: none;
+    width: fit-content;
 }
