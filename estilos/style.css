@@ -93,12 +93,15 @@ nav {
         justify-content: space-around;
         transform: translateX(100%);
         transition: transform 0.3s ease-in;
-        font-size: large;
     }
 
     .nav-list li {
         margin-left: 10;
         opacity: 0; /* será utilizado na animação dos links no script JS */
+    }
+
+    .nav-list a {
+        font-size: larger;
     }
 
     .mobile-menu {
