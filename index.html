@@ -70,7 +70,34 @@
         </div>
         <div class="formulario">
             <form action="" method="post" autocomplete="off">
-                
+                <div class="dados">
+                    <div class="col1">
+                        <p>
+                            <label for="inome"></label>
+                            <input type="text" name="nome" id="inome" placeholder="Nome" required>
+                        </p>
+                        <p>
+                            <label for="iemail"></label>
+                            <input type="email" name="email" id="iemail" placeholder="E-mail" required>
+                        </p>
+                    </div>
+                    <div class="col2">
+                        <p>
+                            <label for="itel"></label>
+                            <input type="tel" name="telefone" id="itel" placeholder="Telefone" pattern="^\(\d{2}\) \d{4,5}-\d{4}$" required>
+                        </p>
+                        <p>
+                            <label for="iassunto"></label>
+                            <input type="text" name="assunto" id="iassunto" placeholder="Assunto" required>
+                        </p>
+                    </div>
+                </div>
+                <div class="msg">
+                    <p>
+                        <label for="imsg"></label>
+                        <textarea name="mensagem" id="imsg" placeholder="Mensagem" wrap="soft" required></textarea>
+                    </p>
+                </div>
             </form>
         </div>
     </footer>
