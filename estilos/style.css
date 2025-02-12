@@ -5,7 +5,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
 body {
@@ -120,14 +120,7 @@ nav {
         /* configurar exibição no JS para mostrar uma imagem */
     }
 
-    footer {
-        display: flex;
-        flex-flow: column wrap;
-    }
-
-    footer div {
-        padding: 0px 10px;
-    }
+    
 }
 
 .nav-list.active {
@@ -209,86 +202,106 @@ section {
 }
 
 footer {
-    border: 2px solid yellow;
     background: #10110B;
     color: #fff;
     padding-bottom: 20px;
 }
 
 footer div {
-    display: inline-flexbox;
-    justify-content: center;
+    width: 100vw;
+    display: inline-flex;
 }
 
 .contatos {
-    border: 2px dotted yellow;
-    width: 46.3vw;
-    height: 100vh;
-    text-align: left;
-    padding: 10px 20px;
+    width: 48vw;
+    flex-direction: column;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.contatos h1 {
+    margin: 5px 0px 10px 10px;
+    width: 35vw;
+}
+
+.contatos p {
+    width: 35vw;
+    margin-left: 10px;
+}
+
+.formulario {
+    width: 50vw;
+    margin: -1px 0px 0px 0px;
+}
+
+form div {
+    display: inline-flex;
+    flex-direction: row;
+    width: 49vw;
+    margin: 0px 0px 0px 0px;
+}
+
+.dados div {
+    display: flex;
     flex-direction: column;
 }
-.formulario {
-    border: 2px dotted yellow;
-    width: 50vw;
-    height: 100vh;
-    flex-direction: row;
-    justify-content: space-evenly;
+
+.dados div p {
+    flex-direction: column;
+    width: 15.5vw;
 }
-/*
-.formulario div {
-    border: 2px dotted yellow;
-    display: inline-block;
-    padding: 0px 2px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-*/
+
 .dados .col1 p {
     padding: 6px;
-    margin: 2px;
-    
+    margin: 0;
 }
 
 .dados .col2 p {
     padding: 6px;
-    margin: 2px;
+    margin: 0;
 }
 
 .col1 p input {
-    flex-direction: column;
-    width: 13.5vw;
-    height: 3.5vh;
+    width: 15vw;
+    height: 4vh;
     padding-left: 5px;
     background-color: #242422;
-    color: whitesmoke;
+    color: #fff;
     border: none;
-    font-size: 14px;
+    font-size: 15px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .col2 p input {
-    flex-direction: column;
-    width: 13.5vw;
-    height: 3.5vh;
+    width: 15vw;
+    height: 4vh;
     padding-left: 5px;
     background-color: #242422;
-    color: whitesmoke;
+    color: #fff;
     border: none;
-    font-size: 14px;
+    font-size: 15px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 input::placeholder {
     color: rgb(134, 133, 133);
-    font-size: 14px;
+    font-size: 15px;
+}
+
+.dados .msg p {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-block-end: 0;
 }
 
 .msg p textarea {
-    width: 13vw;
-    height: 7.5vh;
+    white-space-collapse: discard;
+    width: 14vw;
+    height: 10vh;
     margin: 2px;
     background-color: #242422;
-    color: whitesmoke;
+    color: #fff;
+    margin-block-end: 0;
 }
 
 textarea {
@@ -306,19 +319,23 @@ textarea:active {
 
 textarea::placeholder {
     color: rgb(134, 133, 133);
+    font-size: 15px;
 }
 
 .enviar {
     display: flex;
     justify-content: flex-end;
-    width: 48vw;
+    width: 46vw;
+    margin: 0;
+    padding: 5px 0px;
 }
 
 .enviar input {
     border: 1px solid #fff;
     background:#242422;
-    width: 10vw;
-    height: 4vh;
+    cursor: pointer;
+    width: 9vw;
+    height: 5vh;
     color: #fff;
     font-size: 14px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
