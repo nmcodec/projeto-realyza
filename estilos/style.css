@@ -43,7 +43,7 @@ header {
 }
 
 
-/* configuração nav e menu principal */
+/* configuração nav e links do menu */
 
 nav {
     display: flex;
@@ -64,6 +64,13 @@ nav {
     margin-left: 32px;
 }
 
+.nav-list.active {
+    transform: translateX(0);  /* movimento da barra do menu */
+}
+
+
+/* ícone hambúrguer do menu responsivo */
+
 .mobile-menu {
     display: none;
     cursor: pointer;
@@ -76,6 +83,22 @@ nav {
     margin: 6px;
     transition: 0.3s;
 }
+
+
+/* botão FECHAR do menu responsivo */
+
+.mobile-menu.active .linha1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .linha2 {
+    opacity: 0;
+}
+
+.mobile-menu.active .linha3 {
+    transform: rotate(45deg) translate(-6px, -7px);
+}
+
 
 /* configuração main */
 
@@ -232,7 +255,7 @@ textarea::placeholder {
     }
 
 
-    /* configuração do menu */
+    /* configuração menu */
 
     .nav-list {
         position: absolute;
@@ -332,9 +355,8 @@ textarea::placeholder {
     }
 }
 
-.nav-list.active {
-    transform: translateX(0);  /* movimento da barra do menu */
-}
+
+/* animação dos links do menu */
 
 @keyframes navLinkFade {
     from {
@@ -346,19 +368,5 @@ textarea::placeholder {
         opacity: 1;
         transform: translateX(0);
     }
-    /* animação do menu; ver script JS */
-}
-
-/* botão FECHAR do menu responsivo */
-
-.mobile-menu.active .linha1 {
-    transform: rotate(-45deg) translate(-8px, 8px);
-}
-
-.mobile-menu.active .linha2 {
-    opacity: 0;
-}
-
-.mobile-menu.active .linha3 {
-    transform: rotate(45deg) translate(-6px, -7px);
+    
 }
