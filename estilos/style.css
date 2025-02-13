@@ -148,6 +148,10 @@ section {
 
 /* configuração footer */
 
+footer {
+    padding-bottom: 20px;
+}
+
 footer div {
     display: inline-flex;
     padding-bottom: 25px;
@@ -184,6 +188,7 @@ form div {
 
 .dados p {
     padding: 0;
+    margin-right: 15px;
 }
 
 .dados p input {
@@ -228,6 +233,7 @@ textarea::placeholder {
     display: flex;
     justify-content: end;
     padding: 2px 0px;
+    margin-right: 15px;
 }
 
 .enviar input {
@@ -262,7 +268,7 @@ textarea::placeholder {
         top: 8vh;
         left: 0;
         width: 100vw;
-        height: 30vh;
+        height: 40vh;
         background: #23232e;
         flex-direction: column;
         align-items: flex-start;
@@ -273,6 +279,8 @@ textarea::placeholder {
 
     .nav-list li {
         margin-left: 10;
+        margin-bottom: 10px;
+        padding-bottom: 5px;
         opacity: 0; /* será utilizado na animação dos links no script JS */
     }
 
@@ -299,6 +307,10 @@ textarea::placeholder {
 
     /* configuração footer */
 
+    footer {
+        padding-bottom: 25px;
+    }
+
     footer div {
         display: flex;
         flex-direction: column;
@@ -323,7 +335,7 @@ textarea::placeholder {
     }
 
     .dados p {
-        padding: 0;
+        margin-left: 14px;
     }
 
     .dados p input {
@@ -334,7 +346,7 @@ textarea::placeholder {
     }
 
     .msg textarea {
-        width: 91.5vw;
+        width: 92vw;
         height: 12vh;
         font-size: 17px;
         margin: 3px 0px;
@@ -345,11 +357,12 @@ textarea::placeholder {
 
     .enviar {
         display: inline-flex;
-        justify-content: center;
+        justify-self: center;
+        margin-left: 14.5px;
     }
 
     .enviar input {
-        width: 93.5vw;
+        width: 93vw;
         height: 5.5vh;
         font-size: 17px;
     }
